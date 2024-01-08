@@ -1,13 +1,5 @@
-/**
- * cbpAnimatedHeader.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
+
+ 
 var cbpAnimatedHeader = (function() {
 
 	var docElem = document.documentElement,
@@ -44,24 +36,12 @@ var cbpAnimatedHeader = (function() {
 })();
 
 
-/*!
- * classie - class helper functions
- * from bonzo https://github.com/ded/bonzo
- * 
- * classie.has( elem, 'my-class' ) -> true/false
- * classie.add( elem, 'my-new-class' )
- * classie.remove( elem, 'my-unwanted-class' )
- * classie.toggle( elem, 'my-class' )
- */
-
-/*jshint browser: true, strict: true, undef: true */
-/*global define: false */
 
 ( function( window ) {
 
 'use strict';
 
-// class helper functions from bonzo https://github.com/ded/bonzo
+
 
 function classReg( className ) {
   return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
@@ -125,14 +105,6 @@ if ( typeof define === 'function' && define.amd ) {
 
 })( window );
 
-/*
-* Copyright (C) 2009 Joel Sutherland
-* Licenced under the MIT license
-* http://www.newmediacampaigns.com/page/jquery-flickr-plugin
-*
-* Available tags for templates:
-* title, link, date_taken, description, published, author, author_id, tags, image*
-*/
 (function($) {
   $.fn.jflickrfeed = function(settings, callback) {
     settings = $.extend(true, {
@@ -178,8 +150,7 @@ if ( typeof define === 'function' && define.amd ) {
               }
             }
             
-            // Add Image Sizes
-            // http://www.flickr.com/services/api/misc.urls.html
+            
             item['image_s'] = item.media.m.replace('_m', '_s');
             item['image_t'] = item.media.m.replace('_m', '_t');
             item['image_m'] = item.media.m.replace('_m', '_m');
@@ -211,13 +182,7 @@ if ( typeof define === 'function' && define.amd ) {
 
 
 /**
- * BxSlider v4.1.1 - Fully loaded, responsive content slider
- * http://bxslider.com
- *
- * Copyright 2013, Steven Wanderski - http://stevenwanderski.com - http://bxcreative.com
- * Written while drinking Belgian ales and listening to jazz
- *
- * Released under the MIT license - http://opensource.org/licenses/MIT
+ 
  */
 
 ;(function($){
@@ -715,22 +680,7 @@ if ( typeof define === 'function' && define.amd ) {
       }
     }
 
-    /**
-     * Sets the el's animating property position (which in turn will sometimes animate el).
-     * If using CSS, sets the transform property. If not using CSS, sets the top / left property.
-     *
-     * @param value (int)
-     *  - the animating property's value
-     *
-     * @param type (string) 'slider', 'reset', 'ticker'
-     *  - the type of instance for which the function is being
-     *
-     * @param duration (int)
-     *  - the amount of time (in ms) the transition should occupy
-     *
-     * @param params (array) optional
-     *  - an optional parameter containing any variables that need to be passed in
-     */
+   
     var setPositionProperty = function(value, type, duration, params){
       // use CSS transform
       if(slider.usingCSS){
