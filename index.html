@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-portfolio</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+    <meta name="author" content="nirmal">
+    
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700itali" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,200,100,600" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="./bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./css/misc.css">
+	<link rel="stylesheet" href="./css/green-scheme.css">
+	
+	<!-- JavaScripts -->
+	<script src="./js/jquery-1.10.2.min.js"></script>
+	<script src="./js/jquery-migrate-1.2.1.min.js"></script>
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <div class="responsive_menu">
+        <ul class="main_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">My-projects</a>
+            	<ul>
+            		<li><a href="#">Excel</a></li>
+            		<li><a href="#">Power-Bi</a></li>
+            		<li><a href="#">Python</a></li>
+            	</ul>
+            </li>
+            <li><a href="#">How to reach-</a>
+				<ul>
+					<li><a href="#">Email</a></li>
+					<li><a href="#">Call</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+				</ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Experience</a></li>
+        </ul> 
+    </div> 
+
+	<header class="site-header clearfix">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<div class="pull-left logo">
+						<a href="index.html">
+							<img src="images/logo.png" alt="img">
+						</a>
+					</div>
+
+					<div class="main-navigation pull-right">
+
+						<nav class="main-nav visible-md visible-lg">
+							<ul class="sf-menu">
+								<li class="active"><a href="index.html">Home</a></li>
+					            <li><a href="#">Portfolio</a>
+					            	<ul>
+					            		<li><a href="#">Portfolio Grid</a></li>
+					            		<li><a href="#">Project Image</a></li>
+					            		<li><a href="#">Project Slideshow</a></li>
+					            	</ul>
+					            </li>
+					            <li><a href="#">Blog</a>
+									<ul>
+										<li><a href="#">Blog Standard</a></li>
+										<li><a href="#">Blog Single</a></li>
+                                        <li><a href="#">visit templatemo</a></li>
+									</ul>
+					            </li>
+					            <li><a href="#">Archives</a></li>
+					            <li><a href="#">Contact</a></li>
+							</ul> 
+						</nav> 
+
+						
+					    <div class="responsive-navigation visible-sm visible-xs">
+					        <a id="open" onclick="Open()" href="#nogo" class="menu-toggle-btn">
+					            <i class="fa fa-bars"></i>
+					        </a>
+							<a id="close" style="display: none;" onclick="Close()" href="#nogo" class="menu-toggle-btn">
+								<i class="fa-solid fa-xmark"></i>
+					        </a>
+					    </div> 
+
+					</div> 
+
+				</div> 
+
+			</div> 
+
+		</div>
+	</header>
+
+	<section id="homeIntro" class="parallax first-widget">
+	    <div class="parallax-overlay">
+		    <div class="container home-intro-content">
+		        <div class="row">
+		        	<div class="col-md-12">
+		        		<h2>Hey i am Dhirender Singh</h2>
+		        		<p>Data anlytics<br> is my workspace. </p>
+		        		<a href="#" class="large-button white-color">MY-Resume <i class="icon-button fa fa-download"></i></a>
+		        	</div> 
+		        </div> 
+		    </div> 
+	    </div>
+	</section> 
+	
+	<section class="cta clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="cta-title"><strong>Want to use my projects?</strong> Go and download it </h4>
+					<a href="#" class="main-button accent-color">Visit my project<i class="icon-button fa fa-arrow-right"></i></a>
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<section class="dark-content portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header">
+						<h2 class="section-title">Our Lovely Projects</h2>
+						<p class="section-desc">Everything you need to create a professional Projects.</p>
+					</div> <!-- /.section-header -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+		
+		<div id="portfolio-carousel" class="portfolio-carousel portfolio-holder">
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">Excel project</span>
+								<h3 class="portfolio-title"><a href="#">Visual Projects</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/Python-01 (2).png" title="Visual Admin">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project1.jpg" alt="Visual Admin">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">Excel project</span>
+								<h3 class="portfolio-title"><a href="#">Visual Projects</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/Python-01 (2).png" title="Visual Admin">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project1.jpg" alt="Visual Admin">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">Excel project</span>
+								<h3 class="portfolio-title"><a href="#">Visual Projects</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/Python-01 (2).png" title="Visual Admin">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project1.jpg" alt="Visual Admin">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">Excel project</span>
+								<h3 class="portfolio-title"><a href="#">Visual Projects</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/Python-01 (2).png" title="Visual Admin">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project1.jpg" alt="Visual Admin">
+				</div>
+			</div> <!-- /.item -->
+		</div> <!-- /#owl-demo -->
+	</section> <!-- /.portfolio-holder -->
+
+
+
+	<script>
+		function Open(){
+			const opendata = document.getElementById("open")
+			const closedata = document.getElementById("close")
+			const data = document.getElementsByClassName("responsive_menu")[0]
+			data.style.display = "block"
+		  data.style.transition = "all 1s"
+		  closedata.style.display = "block"
+		  opendata.style.display = "none"
+		  
+		}
+
+		function Close(){
+			const opendata = document.getElementById("open")
+			const closedata = document.getElementById("close")
+			const data = document.getElementsByClassName("responsive_menu")[0]
+			data.style.display = "none"
+			data.style.transition = "all 1s"
+			closedata.style.display = "none"
+			opendata.style.display = "block"
+			
+		}
+
+	</script>
+</body>
+</html>
