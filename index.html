@@ -26,7 +26,24 @@
 
 </head>
 <body>
-    <div class="responsive_menu">
+
+	<div class="confetti">
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+		<div class="confetti-piece"></div>
+	</div>
+	
+    <div id="responsive_menu" class="responsive_menu" style="display: none;">
         <ul class="main_menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">My-projects</a>
@@ -90,10 +107,10 @@
 
 						
 					    <div class="responsive-navigation visible-sm visible-xs">
-					        <a id="open" onclick="Open()" href="#nogo" class="menu-toggle-btn">
+					        <a id="open" onclick="Open()"  class="menu-toggle-btn">
 					            <i class="fa fa-bars"></i>
 					        </a>
-							<a id="close" style="display: none;" onclick="Close()" href="#nogo" class="menu-toggle-btn">
+							<a id="close" style="display: none;" onclick="Close()" class="menu-toggle-btn">
 								<i class="fa-solid fa-xmark"></i>
 					        </a>
 					    </div> 
@@ -474,7 +491,7 @@
 		function Open(){
 			const opendata = document.getElementById("open")
 			const closedata = document.getElementById("close")
-			const data = document.getElementsByClassName("responsive_menu")[0]
+			const data = document.getElementById("responsive_menu")
 			data.style.display = "block"
 		  closedata.style.display = "block"
 		  opendata.style.display = "none"
@@ -484,7 +501,7 @@
 		function Close(){
 			const opendata = document.getElementById("open")
 			const closedata = document.getElementById("close")
-			const data = document.getElementsByClassName("responsive_menu")[0]
+			const data = document.getElementById("responsive_menu")
 			data.style.display = "none"
 			closedata.style.display = "none"
 			opendata.style.display = "block"
